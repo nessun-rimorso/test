@@ -4,9 +4,21 @@ body {
     color:  #ffffff;
     text-align: center;
 }
-h1 {
-    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+.site-wrapper {
+    width: 1028px;
+    margin: 0px auto;
+}
+.header-text {
+    font-size: 18px;
     font-weight: 100;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding-left: 45px;
+    padding-right: 45px
+}
+.header-title {
+    font-size: 31px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
     letter-spacing: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -14,24 +26,13 @@ h1 {
 h2 {
     font-size: 26px;
     font-weight: 100;
-    letter-spacing: 2px;
     margin-top: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
-p {
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 2px;
+.features-items p {
+    font-size: 19px;
 }
-.header {
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    display: block;
-    width: 1000px;
-    height: 42px;
-    margin: 0px auto;
-}
+
 img {
     margin-bottom: 10px;
     margin-top: 90px;
@@ -42,12 +43,15 @@ img {
 .col:nth-child(2) {
     margin: 0px 65px 0px 70px;
 }
-.layout-positioner {
-    width: 300px;
-    height: 450px;
+.features-items {
+    list-style: none;
+    width: 260px;
+    padding: 0;
 }
-.layout-positioner::after {
-    display: table;
-    content: "";
-    clear: both;
+.features {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    height: 400px;  
+    padding-right: 22px;
 }
