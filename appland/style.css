@@ -23,13 +23,13 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-h2 {
+.header-list {
     font-size: 26px;
     font-weight: 100;
     margin-top: 55px;
     margin-bottom: 35px;
 }
-.features-items p {
+.features-item p {
     font-size: 19px;
 }
 
@@ -37,7 +37,7 @@ img {
     margin-bottom: 10px;
     margin-top: 90px;
 }
-.features-items {
+.features-item {
     list-style: none;
     width: 260px;
     padding: 0;
@@ -46,6 +46,6 @@ img {
     display: flex;
     padding: 0;
     justify-content: space-between;
-    height: 400px;  
+    min-height: 400px;  
     padding-right: 22px;
 }
