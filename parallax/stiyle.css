@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Celestina";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Celestina"),
+  url("fonts/Celestina.woff");
+  url("fonts/Celestina.woff2");
+}
+
+
+body {
+  font-family: Celestina, Arial, sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+main {
+  background: linear-gradient(to bottom, #589daa 0%, #e3e7db 30%,  #e0e0d0 40%, #000 60%);
+  min-height: 170vh;
+  padding: 150px;
+  position: relative;
+}
+
+p {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  filter: drop-shadow(16px 16px 10px #c2c2c2);
+}
+
+img {
+  position: absolute;
+  z-index: 1;
+}
+
+img:nth-of-type(1) {
+  top: 150px;
+  left: 0;
+}
+
+img:nth-of-type(2) {
+  top: 300px;
+  right: 0;
+}
+
+img:nth-of-type(3) {
+  top: 0;
+  left: 500px;
+}
+
+img:nth-of-type(4) {
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img:nth-of-type(5) {
+  top: 1480px;
+  left: 0px;
+}
+
+img:nth-of-type(5):hover ~ .shine {
+  opacity: 1;
+}
+
+.shine {
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  z-index: 0;
+  left: 30px;
+  top: 1600px;
+
+  opacity: 0;
+  transition: 300ms ease-out;
+}
+
+.text {
+  background-color: #5539ca;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 100px;
+  width: 70vw;
+  height: 200px;
+  text-align: center;
+  padding: 30px;
+  font-size: 70px;
+  box-sizing: border-box;
+
+  animation-name: appearance;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes appearance {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
