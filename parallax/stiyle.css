@@ -12,12 +12,15 @@ body {
   font-family: Celestina, Arial, sans-serif;
   color: white;
   font-size: 35px;
+  background: linear-gradient(to bottom, #589daa 0%, #e3e7db 30%,  #e0e0d0 40%, #000 60%);
 }
 
 main {
-  background: linear-gradient(to bottom, #589daa 0%, #e3e7db 30%,  #e0e0d0 40%, #000 60%);
   min-height: 170vh;
+  width: 1100px;
+  margin: 0 auto;
   padding: 150px;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -55,7 +58,7 @@ img:nth-of-type(4) {
 }
 
 img:nth-of-type(5) {
-  top: 1480px;
+  top: 1950px;
   left: 0px;
 }
 
